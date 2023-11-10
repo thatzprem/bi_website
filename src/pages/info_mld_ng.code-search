@@ -1,0 +1,14 @@
+# Query: info@mld.ng
+# ContextLines: 1
+
+2 results - 2 files
+
+src/pages/Contact.js:
+  198                                  <h2 className="text-2xl">Send an E-mail</h2>
+  199:                                 <p className="text-gray-400">info@mld.ng</p>
+  200                              </div>
+
+src/pages/DemoProduct.js:
+  273                                          <h2 className="text-2xl">Send an E-mail</h2>
+  274:                                         <p className="text-gray-400">info@mld.ng</p>
+  275                                      </div>
