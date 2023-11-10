@@ -3,11 +3,11 @@ import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
 import axios from 'axios';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import Notiflix from 'notiflix';
 
 const Contact = () => {
-    useDocTitle('MLD | Molad e Konsult - Send us a message')
+    useDocTitle('BlocksIndia | Network Validator and Blockchain development - Send us a message')
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
@@ -38,6 +38,24 @@ const Contact = () => {
         fData.append('phone_number', phone)
         fData.append('message', message)
 
+
+        emailjs.sendForm('service_4j9sodf', 'template_83d8uij', e.target, 'qGZlyFg-cE6G5U4S9')
+        .then((result) => {
+            console.log(result.text);
+            Notiflix.Report.success(
+              'Success',
+              '"Thanks for sending a message, we\'ll be in touch soon."',
+              'Okay',
+              );
+        }, (error) => {
+            console.log(error.text);
+            Notiflix.Report.failure(
+              'An error occured',
+              'Please try sending the message again.',
+              'Okay',
+              );
+        });
+        
         axios({
             method: "post",
             url: process.env.REACT_APP_CONTACT_API,
