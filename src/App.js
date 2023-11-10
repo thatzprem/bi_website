@@ -30,7 +30,7 @@ function App() {
     });
   }, []);
 
-  useDocTitle("MLD | Molad e Konsult - Bespoke Web and Mobile Applications");
+  useDocTitle("BlocksIndia | Validator - #Proton #Metal #Telos #Libre #FIO #TRON");
 
   return (
     <>
