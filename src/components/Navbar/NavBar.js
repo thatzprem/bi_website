@@ -5,7 +5,7 @@ import blocksindia from '../../images/clients/blocksindia.png';
 
 
 const clientImage = {
-    height: '6rem',
+    height: '5rem',
     width: 'auto',
     mixBlendMode: 'colorBurn'
 }

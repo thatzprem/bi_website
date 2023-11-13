@@ -15,11 +15,11 @@ const Intro = () => {
                             
                             <h3 className="text-3xl  text-zinc-900 font-bold">What we offer?</h3>
                             <div>
-                                <p className='my-3 text-xl text-gray-600 font-semibold'>Enterprise level Infrastructure for Blockchain network Promoting adoption and advancement of Blockchain.</p>
+                                <p className='my-3 text-xl text-gray-600 font-semibold'>We provide enterprise standard infrastructure for Blockchain network and promoting adoption and advancement of Blockchain.</p>
                             </div>
                             
                             <div>
-                                <p className='my-3 text-xl text-gray-600 font-semibold'>We ensure High Availability, Reliable infrastructure, Secure Network, Monitoring Metrics, High performance, efficiency and backups.</p>
+                                <p className='my-3 text-xl text-gray-600 font-semibold'>We ensure High Availability, Reliable, Secure Network infrastructure with Monitoring Metrics. High performance, energy efficient block production services enabled with regular backups.</p>
                             </div>
                             <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-2 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0 group">
                                 Contact us
