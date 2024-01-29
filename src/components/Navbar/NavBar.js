@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import NavLinks from '../Navbar/NavLinks';
+import { HashLink } from 'react-router-hash-link';
 import blocksindia from '../../images/clients/blocksindia.png';
 
 
@@ -9,6 +9,7 @@ const clientImage = {
     width: 'auto',
     mixBlendMode: 'colorBurn'
 }
+
 
 const NavBar = () => {
     const [top, setTop] = useState(true);
@@ -33,7 +34,7 @@ const NavBar = () => {
                 <div style={clientImage} className= "overflow-hidden flex justify-center transition-all ease-in-out hover:opacity-100 w-1/6">
                             <img src={blocksindia} alt="client" />                           
                         </div>
-                    <Link to="/"><h1 className="font-extrabold text-4xl text-blue-950">BlocksIndia</h1></Link>
+                    <HashLink smooth to="/#hero"><h1 className="font-extrabold text-4xl text-blue-950">BlocksIndia</h1></HashLink>
                     
                 </div>
                 <div className="group flex flex-col items-center">
@@ -51,7 +52,7 @@ const NavBar = () => {
                         <NavLinks />
                     </div>
 
-                    <div className={`fixed transition-transform duration-300 ease-in-out transit flex justify-center left-0 w-full h-auto rounded-md p-24 bg-white rounded-lg block lg:hidden shadow-xl top-14 ${  isOpen ? "block" : "hidden" } `}>
+                    <div className={`fixed transition-transform duration-300 ease-in-out transit flex justify-center left-0 w-full h-auto rounded-md p-24 bg-white lg:hidden shadow-xl top-14 ${  isOpen ? "block" : "hidden" } `}>
                         <div className='flex flex-col space-y-6'>
                             <NavLinks />
                         </div>                                                
